@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grocery.App.Views.NewProductView"
+             Title="Nieuw product">
+    <VerticalStackLayout Spacing="12" Padding="20">
+        <Entry Placeholder="Naam" Text="{Binding Name}" />
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Voorraad" VerticalOptions="Center" />
+            <Entry Keyboard="Numeric" Text="{Binding Stock}" HorizontalOptions="FillAndExpand" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="THT datum" VerticalOptions="Center" />
+            <DatePicker Date="{Binding ShelfLife}" HorizontalOptions="FillAndExpand" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Prijs" VerticalOptions="Center" />
+            <Entry Keyboard="Numeric" Text="{Binding Price}" HorizontalOptions="FillAndExpand" />
+        </HorizontalStackLayout>
+        <Button Text="Opslaan" Command="{Binding SaveCommand}" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
+
+
