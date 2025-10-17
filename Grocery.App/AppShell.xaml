@@ -21,4 +21,5 @@
             <ShellContent Title="Product categoriën" ContentTemplate="{DataTemplate local:CategoriesView}" />
         </Tab>
     </TabBar>
+    <ShellContent Route="NewProductView" ContentTemplate="{DataTemplate local:NewProductView}" />
 </Shell>

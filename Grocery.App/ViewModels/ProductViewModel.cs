@@ -13,6 +13,12 @@ namespace Grocery.App.ViewModels
         {
             _productService = productService;
             Products = [];
+            LoadProducts();
+        }
+
+        public void LoadProducts()
+        {
+            Products.Clear();
             foreach (Product p in _productService.GetAll()) Products.Add(p);
         }
     }
